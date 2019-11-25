@@ -4,3 +4,12 @@ Este repositorio es una conjunto de microservicios construído en el curso [Micr
 
 ## modificando configuracion de usuario de git
 git config --global --edit
+
+## puertos
+
+|      Aplicación     |  Puerto  |
+|---------------------|----------|
+| servicio-productos  |   8001   |
+
+
+
