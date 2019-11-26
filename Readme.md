@@ -15,4 +15,4 @@ git config --global --edit
 ## enfoque de desarrollo de clases
 
 
-Servicio > Dao > Modelo
+Servicio (Service) > Dao > Modelo (Entity)
