@@ -12,4 +12,7 @@ git config --global --edit
 | servicio-productos  |   8001   |
 
 
+## enfoque de desarrollo de clases
 
+
+Servicio > Dao > Modelo
