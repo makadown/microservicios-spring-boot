@@ -34,7 +34,7 @@ public class ProductoController {
 	 * @param id
 	 * @return
 	 */
-	@GetMapping("/listar/{id}")
+	@GetMapping("/ver/{id}")
 	public Producto detalle(@PathVariable Long id) {
 		return productoService.findById(id);
 	}
