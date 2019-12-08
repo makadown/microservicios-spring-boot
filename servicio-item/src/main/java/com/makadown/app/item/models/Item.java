@@ -28,5 +28,9 @@ public class Item {
 	public void setCantidad(Integer cantidad) {
 		this.cantidad = cantidad;
 	}
+	
+	public Double getTotal() {
+		return producto.getPrecio() * cantidad.doubleValue();
+	}
 
 }

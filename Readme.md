@@ -10,6 +10,7 @@ git config --global --edit
 |      Aplicación     |  Puerto  |
 |---------------------|----------|
 | servicio-productos  |   8001   |
+| servicio-item       |   8002   |
 
 
 ## enfoque de desarrollo de clases
