@@ -7,9 +7,9 @@ git config --global --edit
 
 ## puertos
 
-|      Aplicación     |  Puerto  |
+|      Aplicación     |  Puerto(s)  |
 |---------------------|----------|
-| servicio-productos  |   8001   |
+| servicio-productos  |   8001, 9001   |
 | servicio-item       |   8002   |
 
 

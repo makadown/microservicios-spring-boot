@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.makadown.app.item.models.Producto;
 
 /***
- * Clase que implementa cliente Feign (REST) para consumir APIs
+ * Clase que implementa cliente Feign (REST) para consumir APIs.
+ * El nombre tiene que ser el mismo que el invocado en RibbonClient
+ * del ServicioItemApplication.java
  * @author makadown
  *
  */
-@FeignClient(name="servicio-productos", url="localhost:8001")
+@FeignClient(name="servicio-productos")
 public interface ProductoClienteRest {
 	
 	@GetMapping("/listar")
