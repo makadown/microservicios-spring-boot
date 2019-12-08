@@ -13,7 +13,12 @@ import java.util.HashMap;
 import com.makadown.app.item.models.Item;
 import com.makadown.app.item.models.Producto;
 
-@Service
+/***
+ * Implementación secundaria del Servicio ItemService.
+ * @author makadown
+ *
+ */
+@Service("itemServiceRestTemplate")
 public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
