@@ -19,7 +19,7 @@ public class ItemController {
 	 * El Qualifier es el nombre de servicio implementado
 	 */
 	@Autowired
-	@Qualifier("itemServiceFeign")
+	@Qualifier("itemServiceFeign") // @Qualifier("itemServiceRestTemplate") 
 	private ItemService itemService;
 	
 	@GetMapping("/listar")
