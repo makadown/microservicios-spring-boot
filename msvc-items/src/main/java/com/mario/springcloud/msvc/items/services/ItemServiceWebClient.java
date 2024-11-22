@@ -7,10 +7,10 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import com.mario.springcloud.msvc.items.models.Item;
 
-public class ProductServiceWebClient implements ItemService {
+public class ItemServiceWebClient implements ItemService {
     private final WebClient.Builder client;
 
-    public ProductServiceWebClient(WebClient.Builder client) {
+    public ItemServiceWebClient(WebClient.Builder client) {
         this.client = client;
     }
 
