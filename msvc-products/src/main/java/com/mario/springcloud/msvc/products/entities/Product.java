@@ -1,10 +1,13 @@
 package com.mario.springcloud.msvc.products.entities;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "products")
@@ -19,8 +22,17 @@ public class Product {
     private Double price;
 
     @Column(name = "create_at")
-    private String createAt;
+    private LocalDate createAt;
+
+    @Transient
+    private int port;
     
+    public int getPort() {
+        return port;
+    }
+    public void setPort(int port) {
+        this.port = port;
+    }
     public Long getId() {
         return Id;
     }
@@ -39,10 +51,10 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
-    public String getCreateAt() {
+    public LocalDate getCreateAt() {
         return createAt;
     }
-    public void setCreateAt(String createAt) {
+    public void setCreateAt(LocalDate createAt) {
         this.createAt = createAt;
     }
 }
